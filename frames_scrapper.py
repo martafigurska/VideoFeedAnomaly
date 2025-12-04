@@ -87,7 +87,7 @@ def main():
         "-i",
         output_video,
         "-vf",
-        f"select='not(mod(n\\,{args.nth}))'",
+        f"select='not(mod(n\\,{args.nth}))', crop=1920:960:0:120",
         "-vsync",
         "vfr",
         "-q:v",
